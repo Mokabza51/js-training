@@ -9,7 +9,20 @@
  */
 
 // Your code :
-
+function multiply (num1, num2) {
+  let total = 0
+  if (num1 == 0 || num2 == 0) {
+    return 0
+  }
+  for (var i = 0; i < Math.abs(num2); i++) {
+    total = total + Math.abs(num1)
+  }
+  if((num1 > 0 && num2 > 0) || (num1 < 0 && num2 < 0)){
+    return total
+  } else {
+    return -total
+  }
+}
 //* Begin of tests
 const assert = require('assert')
 

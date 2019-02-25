@@ -11,7 +11,13 @@
  */
 
 // Your code :
-
+function sign (number) {
+  if (number === 0 || isNaN (number)) {
+    number = +number;
+    return (number);
+  }
+  return number > 0 ? 1: -1;
+}
 //* Begin of tests
 const assert = require('assert')
 
